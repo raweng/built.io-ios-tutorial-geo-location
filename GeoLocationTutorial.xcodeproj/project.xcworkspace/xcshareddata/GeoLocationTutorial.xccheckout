@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>458FB4E5-6575-49BB-9A12-52BDEAB01613</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GeoLocationTutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ADFF1B65-2A77-498C-A388-19F0B806002B</key>
+		<string>https://raw-engineering-inc.svn.beanstalkapp.com/built-io-mobile-apps/trunk/iOS/Tutorials</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GeoLocations/GeoLocationTutorial.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ADFF1B65-2A77-498C-A388-19F0B806002B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>ADFF1B65-2A77-498C-A388-19F0B806002B</key>
+		<string>https://raw-engineering-inc.svn.beanstalkapp.com/built-io-mobile-apps</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://raw-engineering-inc.svn.beanstalkapp.com/built-io-mobile-apps/trunk/iOS/Tutorials/GeoLocations/GeoLocationTutorial.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADFF1B65-2A77-498C-A388-19F0B806002B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ADFF1B65-2A77-498C-A388-19F0B806002B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tutorials</string>
+		</dict>
+	</array>
+</dict>
+</plist>
