@@ -55,9 +55,9 @@ enum PinAnnotationTypeTag {
 -(void)initiliseSlider{
     
     radiusLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, self.view.frame.size.height - 35, 98, 20)];
-    [radiusLabel setText:@"Radius (m)"];
+    [radiusLabel setText:@"Radius (200 m)"];
     [radiusLabel setBackgroundColor:[UIColor clearColor]];
-    [radiusLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:18]];
+    [radiusLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:12]];
     [self.view addSubview:radiusLabel];
     
     CGFloat radHeight;
@@ -155,6 +155,7 @@ enum PinAnnotationTypeTag {
 
 - (void)sliderValueChanged:(UISlider *)aSlider {
     self.radius = aSlider.value;
+    [radiusLabel setText:[NSString stringWithFormat:@"Radius (%d m)",(int)self.radius]];
     if (self.targetOverlay) {
         [self.searchMapView removeOverlay:self.targetOverlay];
     }

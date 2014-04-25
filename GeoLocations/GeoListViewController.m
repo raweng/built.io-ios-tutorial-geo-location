@@ -8,7 +8,7 @@
 #import "MapViewController.h"
 #import "GeoLocationCell.h"
 #import "AppDelegate.h"
-#import "AddCurrentUserViewController.h"
+#import "AddNewLocationController.h"
 #import "SearchViewController.h"
 
 
@@ -32,7 +32,7 @@
         
 //        Returns a `BuiltLocation` object for the current longitude and latitude
         [BuiltLocation currentLocationOnSuccess:^(BuiltLocation *currentLocation) {
-            [self.builtQuery nearLocation:currentLocation withRadius:500.0f];
+            [self.builtQuery nearLocation:currentLocation withRadius:3000.0f];
             
             //  Refresh the records by clearing all records from table-view
             [self refresh];
@@ -92,7 +92,7 @@
 
 
 -(void)addUserLocation{
-    AddCurrentUserViewController *addUserVC = [[AddCurrentUserViewController alloc]initWithNibName:nil bundle:nil];
+    AddNewLocationController *addUserVC = [[AddNewLocationController alloc]initWithNibName:nil bundle:nil];
     [self.navigationController pushViewController:addUserVC animated:YES];
 }
 

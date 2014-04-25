@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4283511B190A6D7F0065B9DA /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42835119190A6D7F0065B9DA /* BuiltIO.bundle */; };
+		4283511C190A6D7F0065B9DA /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283511A190A6D7F0065B9DA /* BuiltIO.framework */; };
+		42835126190A83810065B9DA /* Geo-Location29.png in Resources */ = {isa = PBXBuildFile; fileRef = 4283511F190A83810065B9DA /* Geo-Location29.png */; };
+		42835127190A83810065B9DA /* Geo-Location40.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835120190A83810065B9DA /* Geo-Location40.png */; };
+		42835128190A83810065B9DA /* Geo-Location58.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835121190A83810065B9DA /* Geo-Location58.png */; };
+		42835129190A83810065B9DA /* Geo-Location76.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835122190A83810065B9DA /* Geo-Location76.png */; };
+		4283512A190A83810065B9DA /* Geo-Location80.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835123190A83810065B9DA /* Geo-Location80.png */; };
+		4283512B190A83810065B9DA /* Geo-Location120.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835124190A83810065B9DA /* Geo-Location120.png */; };
+		4283512C190A83810065B9DA /* Geo-Location152.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835125190A83810065B9DA /* Geo-Location152.png */; };
 		7D365CCF18C5FB9A00D63249 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D365CCE18C5FB9A00D63249 /* MapViewController.m */; };
 		7D365CD218C6006400D63249 /* GeoPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D365CD118C6006400D63249 /* GeoPinAnnotation.m */; };
 		7D365CE418C6227B00D63249 /* GeoLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D365CE318C6227B00D63249 /* GeoLocationCell.m */; };
 		7D997C0118C47FC200329A93 /* GeoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D997C0018C47FC200329A93 /* GeoListViewController.m */; };
-		7D997C0418C480AC00329A93 /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7D997C0218C480AC00329A93 /* BuiltIO.bundle */; };
-		7D997C0518C480AC00329A93 /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D997C0318C480AC00329A93 /* BuiltIO.framework */; };
 		7D997C0718C486DB00329A93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D997C0618C486DB00329A93 /* QuartzCore.framework */; };
 		7D997C0918C486E300329A93 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D997C0818C486E300329A93 /* Security.framework */; };
 		7D997C0B18C486EC00329A93 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D997C0A18C486EC00329A93 /* CoreTelephony.framework */; };
@@ -25,7 +32,7 @@
 		7D9E003218C70F9A0030F510 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E003118C70F9A0030F510 /* SearchViewController.m */; };
 		7D9E003518C711DC0030F510 /* GeoQueryAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E003418C711DC0030F510 /* GeoQueryAnnotation.m */; };
 		7D9E003818C712D70030F510 /* CircleOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E003718C712D70030F510 /* CircleOverlay.m */; };
-		7DA8282618C6FA5500EA0E7E /* AddCurrentUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8282518C6FA5500EA0E7E /* AddCurrentUserViewController.m */; };
+		7DA8282618C6FA5500EA0E7E /* AddNewLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8282518C6FA5500EA0E7E /* AddNewLocationController.m */; };
 		7DBE3CD618C45985000139A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE3CD518C45985000139A6 /* Foundation.framework */; };
 		7DBE3CD818C45985000139A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE3CD718C45985000139A6 /* CoreGraphics.framework */; };
 		7DBE3CDA18C45985000139A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE3CD918C45985000139A6 /* UIKit.framework */; };
@@ -52,6 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42835119190A6D7F0065B9DA /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
+		4283511A190A6D7F0065B9DA /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
+		4283511F190A83810065B9DA /* Geo-Location29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location29.png"; sourceTree = "<group>"; };
+		42835120190A83810065B9DA /* Geo-Location40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location40.png"; sourceTree = "<group>"; };
+		42835121190A83810065B9DA /* Geo-Location58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location58.png"; sourceTree = "<group>"; };
+		42835122190A83810065B9DA /* Geo-Location76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location76.png"; sourceTree = "<group>"; };
+		42835123190A83810065B9DA /* Geo-Location80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location80.png"; sourceTree = "<group>"; };
+		42835124190A83810065B9DA /* Geo-Location120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location120.png"; sourceTree = "<group>"; };
+		42835125190A83810065B9DA /* Geo-Location152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location152.png"; sourceTree = "<group>"; };
 		7D365CCD18C5FB9A00D63249 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		7D365CCE18C5FB9A00D63249 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7D365CD018C6006400D63249 /* GeoPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoPinAnnotation.h; sourceTree = "<group>"; };
@@ -60,8 +76,6 @@
 		7D365CE318C6227B00D63249 /* GeoLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationCell.m; sourceTree = "<group>"; };
 		7D997BFF18C47FC200329A93 /* GeoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoListViewController.h; sourceTree = "<group>"; };
 		7D997C0018C47FC200329A93 /* GeoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoListViewController.m; sourceTree = "<group>"; };
-		7D997C0218C480AC00329A93 /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BuiltIO.bundle; sourceTree = "<group>"; };
-		7D997C0318C480AC00329A93 /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuiltIO.framework; sourceTree = "<group>"; };
 		7D997C0618C486DB00329A93 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7D997C0818C486E300329A93 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7D997C0A18C486EC00329A93 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -78,8 +92,8 @@
 		7D9E003618C712D70030F510 /* CircleOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOverlay.h; sourceTree = "<group>"; };
 		7D9E003718C712D70030F510 /* CircleOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOverlay.m; sourceTree = "<group>"; };
 		7D9E003918C759070030F510 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
-		7DA8282418C6FA5500EA0E7E /* AddCurrentUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCurrentUserViewController.h; sourceTree = "<group>"; };
-		7DA8282518C6FA5500EA0E7E /* AddCurrentUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCurrentUserViewController.m; sourceTree = "<group>"; };
+		7DA8282418C6FA5500EA0E7E /* AddNewLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewLocationController.h; sourceTree = "<group>"; };
+		7DA8282518C6FA5500EA0E7E /* AddNewLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewLocationController.m; sourceTree = "<group>"; };
 		7DBE3CD218C45985000139A6 /* GeoLocationTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLocationTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBE3CD518C45985000139A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7DBE3CD718C45985000139A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,9 +125,9 @@
 				7D997C0F18C486FE00329A93 /* CoreLocation.framework in Frameworks */,
 				7D997C0D18C486F300329A93 /* CFNetwork.framework in Frameworks */,
 				7D997C0B18C486EC00329A93 /* CoreTelephony.framework in Frameworks */,
+				4283511C190A6D7F0065B9DA /* BuiltIO.framework in Frameworks */,
 				7D997C0918C486E300329A93 /* Security.framework in Frameworks */,
 				7D997C0718C486DB00329A93 /* QuartzCore.framework in Frameworks */,
-				7D997C0518C480AC00329A93 /* BuiltIO.framework in Frameworks */,
 				7DBE3CDA18C45985000139A6 /* UIKit.framework in Frameworks */,
 				7DBE3CD618C45985000139A6 /* Foundation.framework in Frameworks */,
 			);
@@ -132,6 +146,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4283511D190A832C0065B9DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4283511E190A833F0065B9DA /* AppIcons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4283511E190A833F0065B9DA /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				4283511F190A83810065B9DA /* Geo-Location29.png */,
+				42835120190A83810065B9DA /* Geo-Location40.png */,
+				42835121190A83810065B9DA /* Geo-Location58.png */,
+				42835122190A83810065B9DA /* Geo-Location76.png */,
+				42835123190A83810065B9DA /* Geo-Location80.png */,
+				42835124190A83810065B9DA /* Geo-Location120.png */,
+				42835125190A83810065B9DA /* Geo-Location152.png */,
+			);
+			path = AppIcons;
+			sourceTree = "<group>";
+		};
 		7DAB34BF18C8854B00E37F87 /* Appdelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +180,8 @@
 		7DAB34C018C8855D00E37F87 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7DA8282418C6FA5500EA0E7E /* AddCurrentUserViewController.h */,
-				7DA8282518C6FA5500EA0E7E /* AddCurrentUserViewController.m */,
+				7DA8282418C6FA5500EA0E7E /* AddNewLocationController.h */,
+				7DA8282518C6FA5500EA0E7E /* AddNewLocationController.m */,
 				7D9E003018C70F9A0030F510 /* SearchViewController.h */,
 				7D9E003118C70F9A0030F510 /* SearchViewController.m */,
 				7D997BFF18C47FC200329A93 /* GeoListViewController.h */,
@@ -209,6 +245,8 @@
 		7DBE3CD418C45985000139A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42835119190A6D7F0065B9DA /* BuiltIO.bundle */,
+				4283511A190A6D7F0065B9DA /* BuiltIO.framework */,
 				7D997C1618C4873300329A93 /* SystemConfiguration.framework */,
 				7D997C1418C4872200329A93 /* Twitter.framework */,
 				7D997C1218C4870E00329A93 /* Social.framework */,
@@ -218,8 +256,6 @@
 				7D997C0A18C486EC00329A93 /* CoreTelephony.framework */,
 				7D997C0818C486E300329A93 /* Security.framework */,
 				7D997C0618C486DB00329A93 /* QuartzCore.framework */,
-				7D997C0218C480AC00329A93 /* BuiltIO.bundle */,
-				7D997C0318C480AC00329A93 /* BuiltIO.framework */,
 				7DBE3CD518C45985000139A6 /* Foundation.framework */,
 				7DBE3CD718C45985000139A6 /* CoreGraphics.framework */,
 				7DBE3CD918C45985000139A6 /* UIKit.framework */,
@@ -231,6 +267,7 @@
 		7DBE3CDB18C45985000139A6 /* GeoLocations */ = {
 			isa = PBXGroup;
 			children = (
+				4283511D190A832C0065B9DA /* Resources */,
 				7DAB34BF18C8854B00E37F87 /* Appdelegate */,
 				7DAB34C118C885BC00E37F87 /* View */,
 				7DAB34C018C8855D00E37F87 /* ViewController */,
@@ -348,10 +385,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D997C0418C480AC00329A93 /* BuiltIO.bundle in Resources */,
 				BA286A5D18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist in Resources */,
+				42835126190A83810065B9DA /* Geo-Location29.png in Resources */,
+				4283512C190A83810065B9DA /* Geo-Location152.png in Resources */,
+				4283512A190A83810065B9DA /* Geo-Location80.png in Resources */,
 				7DBE3CE018C45985000139A6 /* InfoPlist.strings in Resources */,
+				42835129190A83810065B9DA /* Geo-Location76.png in Resources */,
+				4283511B190A6D7F0065B9DA /* BuiltIO.bundle in Resources */,
+				4283512B190A83810065B9DA /* Geo-Location120.png in Resources */,
+				42835127190A83810065B9DA /* Geo-Location40.png in Resources */,
 				7DBE3CE818C45985000139A6 /* Images.xcassets in Resources */,
+				42835128190A83810065B9DA /* Geo-Location58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +423,7 @@
 				7D997C0118C47FC200329A93 /* GeoListViewController.m in Sources */,
 				7D365CD218C6006400D63249 /* GeoPinAnnotation.m in Sources */,
 				7D365CCF18C5FB9A00D63249 /* MapViewController.m in Sources */,
-				7DA8282618C6FA5500EA0E7E /* AddCurrentUserViewController.m in Sources */,
+				7DA8282618C6FA5500EA0E7E /* AddNewLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,11 +548,11 @@
 		7DBE3CFF18C45985000139A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/sameer/Documents/iOS\\ Projects/builtIO\\ tutorial\\ github/github\\ built/built.io-ios-tutorial-geo-location/built.io-ios-framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoLocations/GeoLocationTutorial-Prefix.pch";
@@ -521,11 +565,11 @@
 		7DBE3D0018C45985000139A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/sameer/Documents/iOS\\ Projects/builtIO\\ tutorial\\ github/github\\ built/built.io-ios-tutorial-geo-location/built.io-ios-framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoLocations/GeoLocationTutorial-Prefix.pch";

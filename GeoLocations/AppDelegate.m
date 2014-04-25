@@ -25,8 +25,8 @@
     // [Built initializeWithApiKey:@"API_KEY" andUid:@"APP_UID"]
     // ****************************************************************************
 
-    [Built initializeWithApiKey:@"APPLICATION_API_KEY" andUid:@"APP_UID"];
-//    [Built initializeWithApiKey:@"blt9f2f3c1d77c907e0" andUid:@"geofencing"];
+//    [Built initializeWithApiKey:@"APPLICATION_API_KEY" andUid:@"APP_UID"];
+    [Built initializeWithApiKey:@"blt9f2f3c1d77c907e0" andUid:@"geofencing"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -136,15 +136,15 @@
 //For Google App Client ID to authenticate from Google
 -(NSString *)googleAppClientID{
     //Put client_id here
-    return @"client_id here";
-//    return @"568588508670.apps.googleusercontent.com";
+//    return @"client_id here";
+    return @"568588508670.apps.googleusercontent.com";
 }
 
 //For Google App Client Secret to authenticate from Google
 -(NSString *)googleAppClientSecret{
     //Put secret here
-    return @"Google App Client Secret here";
-//    return @"YNASO2MDS17U58rT7Hm12l7Z";
+//    return @"Google App Client Secret here";
+    return @"YNASO2MDS17U58rT7Hm12l7Z";
 }
 
 #pragma mark
@@ -185,6 +185,11 @@
         self.locationManager.delegate = nil;
         self.locationManager = nil;
     }
+}
+
+#pragma mark - CLLocationManagerDelegate
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    self.locationManager = manager;
 }
 
 @end
