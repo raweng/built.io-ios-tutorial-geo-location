@@ -52,7 +52,9 @@
     //Set Location of user and Update data of user
     [defaultUser setLocation:builtLoc];
     [defaultUser updateUserWithAuthData:nil onSuccess:^{
+        NSLog(@"user update success");
     } onError:^(NSError *error) {
+        NSLog(@"user update error");
     }];
 
     [self.window makeKeyAndVisible];

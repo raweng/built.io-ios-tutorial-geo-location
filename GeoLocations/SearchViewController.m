@@ -49,7 +49,16 @@ enum PinAnnotationTypeTag {
     
     // Get current Built User
     currentBuiltUser = [BuiltUser currentUser];
-    [self configureOverlay];
+    [BuiltLocation currentLocationOnSuccess:^(BuiltLocation *currentLocation) {
+        [currentBuiltUser setLocation:currentLocation];
+        [currentBuiltUser updateUserWithAuthData:nil onSuccess:^{
+            [self configureOverlay];
+        } onError:^(NSError *error) {
+            NSLog(@"error %@",error);
+        }];
+    } onError:^(NSError *error) {
+        
+    }];
 }
 
 -(void)initiliseSlider{
