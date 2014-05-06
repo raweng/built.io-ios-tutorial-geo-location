@@ -549,11 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"/Users/sameer/Documents/iOS\\ Projects/builtIO\\ tutorial\\ github/github\\ built/built.io-ios-tutorial-geo-location/built.io-ios-framework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoLocations/GeoLocationTutorial-Prefix.pch";
 				INFOPLIST_FILE = "GeoLocations/GeoLocationTutorial-Info.plist";
@@ -566,11 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"/Users/sameer/Documents/iOS\\ Projects/builtIO\\ tutorial\\ github/github\\ built/built.io-ios-tutorial-geo-location/built.io-ios-framework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoLocations/GeoLocationTutorial-Prefix.pch";
 				INFOPLIST_FILE = "GeoLocations/GeoLocationTutorial-Info.plist";
