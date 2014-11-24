@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23D375E61A2311F0004B0EED /* GeoLocationTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D375E51A2311F0004B0EED /* GeoLocationTutorialTests.m */; };
 		4283511B190A6D7F0065B9DA /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42835119190A6D7F0065B9DA /* BuiltIO.bundle */; };
 		4283511C190A6D7F0065B9DA /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283511A190A6D7F0065B9DA /* BuiltIO.framework */; };
 		42835126190A83810065B9DA /* Geo-Location29.png in Resources */ = {isa = PBXBuildFile; fileRef = 4283511F190A83810065B9DA /* Geo-Location29.png */; };
@@ -40,25 +41,23 @@
 		7DBE3CE218C45985000139A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE3CE118C45985000139A6 /* main.m */; };
 		7DBE3CE618C45985000139A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE3CE518C45985000139A6 /* AppDelegate.m */; };
 		7DBE3CE818C45985000139A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE3CE718C45985000139A6 /* Images.xcassets */; };
-		7DBE3CEF18C45985000139A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE3CEE18C45985000139A6 /* XCTest.framework */; };
-		7DBE3CF018C45985000139A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE3CD518C45985000139A6 /* Foundation.framework */; };
-		7DBE3CF118C45985000139A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBE3CD918C45985000139A6 /* UIKit.framework */; };
-		7DBE3CF918C45985000139A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE3CF718C45985000139A6 /* InfoPlist.strings */; };
-		7DBE3CFB18C45985000139A6 /* GeoLocationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE3CFA18C45985000139A6 /* GeoLocationsTests.m */; };
 		BA286A5D18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA286A5C18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7DBE3CF218C45985000139A6 /* PBXContainerItemProxy */ = {
+		23D375E71A2311F0004B0EED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7DBE3CCA18C45985000139A6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7DBE3CD118C45985000139A6;
-			remoteInfo = GeoLocations;
+			remoteInfo = GeoLocationTutorial;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D375E11A2311F0004B0EED /* GeoLocationTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D375E41A2311F0004B0EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D375E51A2311F0004B0EED /* GeoLocationTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoLocationTutorialTests.m; sourceTree = "<group>"; };
 		42835119190A6D7F0065B9DA /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
 		4283511A190A6D7F0065B9DA /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
 		4283511F190A83810065B9DA /* Geo-Location29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location29.png"; sourceTree = "<group>"; };
@@ -104,7 +103,6 @@
 		7DBE3CE418C45985000139A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DBE3CE518C45985000139A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7DBE3CE718C45985000139A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7DBE3CED18C45985000139A6 /* GeoLocationTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBE3CEE18C45985000139A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7DBE3CF618C45985000139A6 /* GeoLocationTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoLocationTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		7DBE3CF818C45985000139A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -113,6 +111,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23D375DE1A2311F0004B0EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DBE3CCF18C45985000139A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,19 +138,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DBE3CEA18C45985000139A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DBE3CEF18C45985000139A6 /* XCTest.framework in Frameworks */,
-				7DBE3CF118C45985000139A6 /* UIKit.framework in Frameworks */,
-				7DBE3CF018C45985000139A6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23D375E21A2311F0004B0EED /* GeoLocationTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				23D375E51A2311F0004B0EED /* GeoLocationTutorialTests.m */,
+				23D375E31A2311F0004B0EED /* Supporting Files */,
+			);
+			path = GeoLocationTutorialTests;
+			sourceTree = "<group>";
+		};
+		23D375E31A2311F0004B0EED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23D375E41A2311F0004B0EED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4283511D190A832C0065B9DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +240,7 @@
 			children = (
 				7DBE3CDB18C45985000139A6 /* GeoLocations */,
 				7DBE3CF418C45985000139A6 /* GeoLocationsTests */,
+				23D375E21A2311F0004B0EED /* GeoLocationTutorialTests */,
 				7DBE3CD418C45985000139A6 /* Frameworks */,
 				7DBE3CD318C45985000139A6 /* Products */,
 			);
@@ -237,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				7DBE3CD218C45985000139A6 /* GeoLocationTutorial.app */,
-				7DBE3CED18C45985000139A6 /* GeoLocationTutorialTests.xctest */,
+				23D375E11A2311F0004B0EED /* GeoLocationTutorialTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -310,6 +323,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		23D375E01A2311F0004B0EED /* GeoLocationTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23D375E91A2311F0004B0EED /* Build configuration list for PBXNativeTarget "GeoLocationTutorialTests" */;
+			buildPhases = (
+				23D375DD1A2311F0004B0EED /* Sources */,
+				23D375DE1A2311F0004B0EED /* Frameworks */,
+				23D375DF1A2311F0004B0EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23D375E81A2311F0004B0EED /* PBXTargetDependency */,
+			);
+			name = GeoLocationTutorialTests;
+			productName = GeoLocationTutorialTests;
+			productReference = 23D375E11A2311F0004B0EED /* GeoLocationTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7DBE3CD118C45985000139A6 /* GeoLocationTutorial */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DBE3CFE18C45985000139A6 /* Build configuration list for PBXNativeTarget "GeoLocationTutorial" */;
@@ -327,24 +358,6 @@
 			productReference = 7DBE3CD218C45985000139A6 /* GeoLocationTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7DBE3CEC18C45985000139A6 /* GeoLocationTutorialTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DBE3D0118C45985000139A6 /* Build configuration list for PBXNativeTarget "GeoLocationTutorialTests" */;
-			buildPhases = (
-				7DBE3CE918C45985000139A6 /* Sources */,
-				7DBE3CEA18C45985000139A6 /* Frameworks */,
-				7DBE3CEB18C45985000139A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DBE3CF318C45985000139A6 /* PBXTargetDependency */,
-			);
-			name = GeoLocationTutorialTests;
-			productName = GeoLocationsTests;
-			productReference = 7DBE3CED18C45985000139A6 /* GeoLocationTutorialTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -354,7 +367,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = raweng;
 				TargetAttributes = {
-					7DBE3CEC18C45985000139A6 = {
+					23D375E01A2311F0004B0EED = {
+						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 7DBE3CD118C45985000139A6;
 					};
 				};
@@ -375,12 +389,19 @@
 			projectRoot = "";
 			targets = (
 				7DBE3CD118C45985000139A6 /* GeoLocationTutorial */,
-				7DBE3CEC18C45985000139A6 /* GeoLocationTutorialTests */,
+				23D375E01A2311F0004B0EED /* GeoLocationTutorialTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23D375DF1A2311F0004B0EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DBE3CD018C45985000139A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,17 +420,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DBE3CEB18C45985000139A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DBE3CF918C45985000139A6 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23D375DD1A2311F0004B0EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23D375E61A2311F0004B0EED /* GeoLocationTutorialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DBE3CCE18C45985000139A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,21 +448,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DBE3CE918C45985000139A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DBE3CFB18C45985000139A6 /* GeoLocationsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7DBE3CF318C45985000139A6 /* PBXTargetDependency */ = {
+		23D375E81A2311F0004B0EED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7DBE3CD118C45985000139A6 /* GeoLocationTutorial */;
-			targetProxy = 7DBE3CF218C45985000139A6 /* PBXContainerItemProxy */;
+			targetProxy = 23D375E71A2311F0004B0EED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -465,6 +478,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23D375EA1A2311F0004B0EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GeoLocationTutorialTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLocationTutorial.app/GeoLocationTutorial";
+			};
+			name = Debug;
+		};
+		23D375EB1A2311F0004B0EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GeoLocationTutorialTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLocationTutorial.app/GeoLocationTutorial";
+			};
+			name = Release;
+		};
 		7DBE3CFC18C45985000139A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -571,51 +628,17 @@
 			};
 			name = Release;
 		};
-		7DBE3D0218C45985000139A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoLocations.app/GeoLocations";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GeoLocations/GeoLocations-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GeoLocationsTests/GeoLocationTutorialTests-Info.plist";
-				PRODUCT_NAME = GeoLocationTutorialTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		7DBE3D0318C45985000139A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoLocations.app/GeoLocations";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GeoLocations/GeoLocations-Prefix.pch";
-				INFOPLIST_FILE = "GeoLocationsTests/GeoLocationTutorialTests-Info.plist";
-				PRODUCT_NAME = GeoLocationTutorialTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23D375E91A2311F0004B0EED /* Build configuration list for PBXNativeTarget "GeoLocationTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D375EA1A2311F0004B0EED /* Debug */,
+				23D375EB1A2311F0004B0EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7DBE3CCD18C45985000139A6 /* Build configuration list for PBXProject "GeoLocationTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -630,15 +653,6 @@
 			buildConfigurations = (
 				7DBE3CFF18C45985000139A6 /* Debug */,
 				7DBE3D0018C45985000139A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DBE3D0118C45985000139A6 /* Build configuration list for PBXNativeTarget "GeoLocationTutorialTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DBE3D0218C45985000139A6 /* Debug */,
-				7DBE3D0318C45985000139A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

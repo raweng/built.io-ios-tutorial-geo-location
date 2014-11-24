@@ -10,43 +10,43 @@
 	<string>GeoLocationTutorial</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4073812C-750D-4F0F-9D5E-0EFACACA2159</key>
-		<string>https://github.com/raweng/built.io-ios-tutorial-geo-location.git</string>
-		<key>EF60F796-2C9E-428B-8906-5A9E71B6CF85</key>
+		<key>ACD166E1E08D0FB272C4B42C03503CFA623DE62B</key>
 		<string>https://github.com/raweng/built.io-ios-framework</string>
+		<key>B4018D8BDA7CDBBEE0866F35913A4C887287CCFE</key>
+		<string>https://github.com/raweng/built.io-ios-tutorial-geo-location.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GeoLocationTutorial.xcodeproj/project.xcworkspace</string>
+	<string>GeoLocationTutorial.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4073812C-750D-4F0F-9D5E-0EFACACA2159</key>
+		<key>ACD166E1E08D0FB272C4B42C03503CFA623DE62B</key>
+		<string>../..built.io-ios-framework/</string>
+		<key>B4018D8BDA7CDBBEE0866F35913A4C887287CCFE</key>
 		<string>../..</string>
-		<key>EF60F796-2C9E-428B-8906-5A9E71B6CF85</key>
-		<string>../../built.io-ios-framework</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/raweng/built.io-ios-tutorial-geo-location.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4073812C-750D-4F0F-9D5E-0EFACACA2159</string>
+	<string>B4018D8BDA7CDBBEE0866F35913A4C887287CCFE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4073812C-750D-4F0F-9D5E-0EFACACA2159</string>
+			<string>ACD166E1E08D0FB272C4B42C03503CFA623DE62B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>built</string>
+			<string>built.io-ios-framework</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EF60F796-2C9E-428B-8906-5A9E71B6CF85</string>
+			<string>B4018D8BDA7CDBBEE0866F35913A4C887287CCFE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>built</string>
+			<string>built.io-ios-tutorial-geo-location</string>
 		</dict>
 	</array>
 </dict>
