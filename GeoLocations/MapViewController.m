@@ -32,8 +32,8 @@
     [self.view addSubview:self.builtMapView];
     [self.builtMapView setDelegate:self];
 
-    if (self.currentBuiltObject.getLocation) {
-        BuiltLocation *currentLocation = self.currentBuiltObject.getLocation;
+    if (self.currentBuiltObject.location) {
+        BuiltLocation *currentLocation = self.currentBuiltObject.location;
         self.builtMapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(currentLocation.latitude, currentLocation.longitude), MKCoordinateSpanMake(0.01f, 0.01f));
         
         // add the annotation

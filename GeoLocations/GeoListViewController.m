@@ -20,26 +20,18 @@
 
 @implementation GeoListViewController
 
--(id)initWithStyle:(UITableViewStyle)style{
-    self = [super initWithStyle:style];
+-(id)initWithStyle:(UITableViewStyle)style withBuiltClass:(BuiltClass *)builtClass{
+    self = [super initWithStyle:style withBuiltClass:builtClass];
     if (self) {
         self.title = @"Geo Locations";
         self.enablePullToRefresh = YES;
         self.fetchLimit = 10;
-        self.edgesForExtendedLayout=UIRectEdgeNone;
-        self.extendedLayoutIncludesOpaqueBars=NO;
-        self.automaticallyAdjustsScrollViewInsets=NO;
-        
-//        Returns a `BuiltLocation` object for the current longitude and latitude
-        [BuiltLocation currentLocationOnSuccess:^(BuiltLocation *currentLocation) {
+        //        Returns a `BuiltLocation` object for the current longitude and latitude
+        [BuiltLocation currentLocationOnCompletion:^(BuiltLocation *currentLocation, NSError *error) {
             [self.builtQuery nearLocation:currentLocation withRadius:3000.0f];
-            
-            //  Refresh the records by clearing all records from table-view
             [self refresh];
-        } onError:^(NSError *error) {
-        
         }];
-      
+
     }
     return self;
 }
@@ -47,6 +39,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars=NO;
+    self.automaticallyAdjustsScrollViewInsets=NO;
+    
    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addUserLocation)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchNearByUsers)];

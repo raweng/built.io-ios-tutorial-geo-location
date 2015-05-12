@@ -105,18 +105,20 @@
 
     if (nameTextField.text.length > 0 && desTextField.text.length > 0) {
         BuiltLocation *builtlocation = [BuiltLocation locationWithLongitude:coordinate.longitude andLatitude:coordinate.latitude];
-        BuiltObject *newBuiltObject = [BuiltObject objectWithClassUID:@"places"];
+        BuiltClass *builtClass = [[AppDelegate sharedAppDelegate].builtApplication classWithUID:@"places"];
+        BuiltObject *newBuiltObject = [builtClass object];
         [newBuiltObject setObject:nameTextField.text forKey:@"place_name"];
         [newBuiltObject setObject:desTextField.text forKey:@"description"];
         [newBuiltObject setLocation:builtlocation];
-        [newBuiltObject saveOnSuccess:^{
-            UIAlertView *fbErrorAlert = [[UIAlertView alloc]initWithTitle:@"Built.io Message" message:@"New Built object saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [fbErrorAlert show];
-        } onError:^(NSError *error) {
+        [newBuiltObject saveInBackgroundWithCompletion:^(ResponseType responseType, NSError *error) {
+            if (!error) {
+                UIAlertView *fbErrorAlert = [[UIAlertView alloc]initWithTitle:@"Built.io Backend Message" message:@"New Built object saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [fbErrorAlert show];
 
+            }
         }];
     }else{
-        UIAlertView *textAlert = [[UIAlertView alloc]initWithTitle:@"Built.io Message" message:@"Enter Name and Description" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        UIAlertView *textAlert = [[UIAlertView alloc]initWithTitle:@"Built.io Backend Message" message:@"Enter Name and Description" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                     [textAlert show];
     }
 }

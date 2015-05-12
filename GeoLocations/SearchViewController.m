@@ -48,17 +48,18 @@ enum PinAnnotationTypeTag {
     [self initiliseSlider];
     
     // Get current Built User
-    currentBuiltUser = [BuiltUser currentUser];
-    [BuiltLocation currentLocationOnSuccess:^(BuiltLocation *currentLocation) {
-        [currentBuiltUser setLocation:currentLocation];
-        [currentBuiltUser updateUserWithAuthData:nil onSuccess:^{
-            [self configureOverlay];
-        } onError:^(NSError *error) {
-            NSLog(@"error %@",error);
-        }];
-    } onError:^(NSError *error) {
-        
+    currentBuiltUser = [[AppDelegate sharedAppDelegate].builtApplication currentUser];
+    [BuiltLocation currentLocationOnCompletion:^(BuiltLocation *currentLocation, NSError *error) {
+        if (!error) {
+            [currentBuiltUser setLocation:currentLocation];
+            [currentBuiltUser updateUserInBackgroundWithAuthData:nil completion:^(ResponseType responseType, NSError *error) {
+                if (!error) {
+                    [self configureOverlay];
+                }
+            }];
+        }
     }];
+   
 }
 
 -(void)initiliseSlider{
@@ -148,14 +149,14 @@ enum PinAnnotationTypeTag {
 }
 
 - (void)configureOverlay {
-    if (currentBuiltUser.getLocation) {
+    if (currentBuiltUser.location) {
         [self.searchMapView removeAnnotations:self.searchMapView.annotations];
         [self.searchMapView removeOverlays:self.searchMapView.overlays];
         
-        CircleOverlay *overlay = [[CircleOverlay alloc] initWithCoordinate:CLLocationCoordinate2DMake(currentBuiltUser.getLocation.latitude, currentBuiltUser.getLocation.longitude) radius:self.radius];
+        CircleOverlay *overlay = [[CircleOverlay alloc] initWithCoordinate:CLLocationCoordinate2DMake(currentBuiltUser.location.latitude, currentBuiltUser.location.longitude) radius:self.radius];
         [self.searchMapView addOverlay:overlay];
         
-        GeoQueryAnnotation *annotation = [[GeoQueryAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(currentBuiltUser.getLocation.latitude, currentBuiltUser.getLocation.longitude) radius:self.radius];
+        GeoQueryAnnotation *annotation = [[GeoQueryAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(currentBuiltUser.location.latitude, currentBuiltUser.location.longitude) radius:self.radius];
         [self.searchMapView addAnnotation:annotation];
         
         [self updateLocations];
@@ -169,7 +170,7 @@ enum PinAnnotationTypeTag {
         [self.searchMapView removeOverlay:self.targetOverlay];
     }
     
-    self.targetOverlay = [[CircleOverlay alloc] initWithCoordinate:CLLocationCoordinate2DMake(currentBuiltUser.getLocation.latitude, currentBuiltUser.getLocation.longitude) radius:self.radius];
+    self.targetOverlay = [[CircleOverlay alloc] initWithCoordinate:CLLocationCoordinate2DMake(currentBuiltUser.location.latitude, currentBuiltUser.location.longitude) radius:self.radius];
     [self.searchMapView addOverlay:self.targetOverlay];
     [self configureOverlay];
 }
@@ -177,27 +178,28 @@ enum PinAnnotationTypeTag {
 - (void)updateLocations {
     
     // BuiltQuery is used to query for BuiltObjects for respective class UID
-    BuiltQuery *query = [BuiltQuery queryWithClassUID:@"places"];
-    self.searchMapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(currentBuiltUser.getLocation.latitude, currentBuiltUser.getLocation.longitude), MKCoordinateSpanMake(0.05f, 0.05f));
+    BuiltClass *builtClass = [[AppDelegate sharedAppDelegate].builtApplication classWithUID:@"places"];
+    BuiltQuery *query = [builtClass query];
+    self.searchMapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(currentBuiltUser.location.latitude, currentBuiltUser.location.longitude), MKCoordinateSpanMake(0.05f, 0.05f));
     
     if (!self.radius) {
-        [query nearLocation:currentBuiltUser.getLocation withRadius:100];
+        [query nearLocation:currentBuiltUser.location withRadius:100];
     }else{
-        [query nearLocation:currentBuiltUser.getLocation withRadius:self.radius];
+        [query nearLocation:currentBuiltUser.location withRadius:self.radius];
     }
     
     //Executes a single or a chained query and callbacks the `QueryResult` with `ResponseType`.
-    [query exec:^(QueryResult *result, ResponseType type) {
-        for (BuiltObject *object in [result getResult]) {
-            
-            if (object.getLocation != currentBuiltUser.getLocation) {
-                GeoPinAnnotation *geoPinAnnotation = [[GeoPinAnnotation alloc]initWithObject:object];
-               [self.searchMapView addAnnotation:geoPinAnnotation];
+    [query execInBackground:^(ResponseType type, QueryResult *result, NSError *error) {
+        if (!error) {
+            for (BuiltObject *object in [result getResult]) {
+                
+                if (object.location != currentBuiltUser.location) {
+                    GeoPinAnnotation *geoPinAnnotation = [[GeoPinAnnotation alloc]initWithObject:object];
+                    [self.searchMapView addAnnotation:geoPinAnnotation];
+                }
+                
             }
-            
         }
-    } onError:^(NSError *error, ResponseType type) {
-        
     }];
 }
 

@@ -10,13 +10,6 @@
 		23D375E61A2311F0004B0EED /* GeoLocationTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D375E51A2311F0004B0EED /* GeoLocationTutorialTests.m */; };
 		4283511B190A6D7F0065B9DA /* BuiltIO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42835119190A6D7F0065B9DA /* BuiltIO.bundle */; };
 		4283511C190A6D7F0065B9DA /* BuiltIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4283511A190A6D7F0065B9DA /* BuiltIO.framework */; };
-		42835126190A83810065B9DA /* Geo-Location29.png in Resources */ = {isa = PBXBuildFile; fileRef = 4283511F190A83810065B9DA /* Geo-Location29.png */; };
-		42835127190A83810065B9DA /* Geo-Location40.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835120190A83810065B9DA /* Geo-Location40.png */; };
-		42835128190A83810065B9DA /* Geo-Location58.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835121190A83810065B9DA /* Geo-Location58.png */; };
-		42835129190A83810065B9DA /* Geo-Location76.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835122190A83810065B9DA /* Geo-Location76.png */; };
-		4283512A190A83810065B9DA /* Geo-Location80.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835123190A83810065B9DA /* Geo-Location80.png */; };
-		4283512B190A83810065B9DA /* Geo-Location120.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835124190A83810065B9DA /* Geo-Location120.png */; };
-		4283512C190A83810065B9DA /* Geo-Location152.png in Resources */ = {isa = PBXBuildFile; fileRef = 42835125190A83810065B9DA /* Geo-Location152.png */; };
 		7D365CCF18C5FB9A00D63249 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D365CCE18C5FB9A00D63249 /* MapViewController.m */; };
 		7D365CD218C6006400D63249 /* GeoPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D365CD118C6006400D63249 /* GeoPinAnnotation.m */; };
 		7D365CE418C6227B00D63249 /* GeoLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D365CE318C6227B00D63249 /* GeoLocationCell.m */; };
@@ -42,6 +35,12 @@
 		7DBE3CE618C45985000139A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE3CE518C45985000139A6 /* AppDelegate.m */; };
 		7DBE3CE818C45985000139A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE3CE718C45985000139A6 /* Images.xcassets */; };
 		BA286A5D18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA286A5C18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist */; };
+		FA231A921A9F0DD400434E36 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A911A9F0DD400434E36 /* libicucore.dylib */; };
+		FA231A941A9F0DDB00434E36 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A931A9F0DDB00434E36 /* libsqlite3.dylib */; };
+		FA231A961A9F0DE100434E36 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A951A9F0DE100434E36 /* libc++.dylib */; };
+		FA231A981A9F0DE800434E36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A971A9F0DE800434E36 /* MobileCoreServices.framework */; };
+		FA231A9A1A9F0DFA00434E36 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A991A9F0DFA00434E36 /* CoreFoundation.framework */; };
+		FA231A9C1A9F0E0400434E36 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA231A9B1A9F0E0400434E36 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +59,6 @@
 		23D375E51A2311F0004B0EED /* GeoLocationTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoLocationTutorialTests.m; sourceTree = "<group>"; };
 		42835119190A6D7F0065B9DA /* BuiltIO.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BuiltIO.bundle; path = "built.io-ios-framework/BuiltIO.bundle"; sourceTree = "<group>"; };
 		4283511A190A6D7F0065B9DA /* BuiltIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuiltIO.framework; path = "built.io-ios-framework/BuiltIO.framework"; sourceTree = "<group>"; };
-		4283511F190A83810065B9DA /* Geo-Location29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location29.png"; sourceTree = "<group>"; };
-		42835120190A83810065B9DA /* Geo-Location40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location40.png"; sourceTree = "<group>"; };
-		42835121190A83810065B9DA /* Geo-Location58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location58.png"; sourceTree = "<group>"; };
-		42835122190A83810065B9DA /* Geo-Location76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location76.png"; sourceTree = "<group>"; };
-		42835123190A83810065B9DA /* Geo-Location80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location80.png"; sourceTree = "<group>"; };
-		42835124190A83810065B9DA /* Geo-Location120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location120.png"; sourceTree = "<group>"; };
-		42835125190A83810065B9DA /* Geo-Location152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geo-Location152.png"; sourceTree = "<group>"; };
 		7D365CCD18C5FB9A00D63249 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		7D365CCE18C5FB9A00D63249 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7D365CD018C6006400D63249 /* GeoPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoPinAnnotation.h; sourceTree = "<group>"; };
@@ -104,10 +96,13 @@
 		7DBE3CE518C45985000139A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7DBE3CE718C45985000139A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7DBE3CEE18C45985000139A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7DBE3CF618C45985000139A6 /* GeoLocationTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoLocationTutorialTests-Info.plist"; sourceTree = "<group>"; };
-		7DBE3CF818C45985000139A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7DBE3CFA18C45985000139A6 /* GeoLocationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoLocationsTests.m; sourceTree = "<group>"; };
 		BA286A5C18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GeoLocationTutorial-Info.plist"; sourceTree = "<group>"; };
+		FA231A911A9F0DD400434E36 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		FA231A931A9F0DDB00434E36 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		FA231A951A9F0DE100434E36 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		FA231A971A9F0DE800434E36 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FA231A991A9F0DFA00434E36 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FA231A9B1A9F0E0400434E36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +117,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA231A9C1A9F0E0400434E36 /* CoreData.framework in Frameworks */,
+				FA231A9A1A9F0DFA00434E36 /* CoreFoundation.framework in Frameworks */,
+				FA231A981A9F0DE800434E36 /* MobileCoreServices.framework in Frameworks */,
+				FA231A961A9F0DE100434E36 /* libc++.dylib in Frameworks */,
+				FA231A941A9F0DDB00434E36 /* libsqlite3.dylib in Frameworks */,
+				FA231A921A9F0DD400434E36 /* libicucore.dylib in Frameworks */,
 				7DBE3CD818C45985000139A6 /* CoreGraphics.framework in Frameworks */,
 				7D997C1718C4873300329A93 /* SystemConfiguration.framework in Frameworks */,
 				7D997C1518C4872200329A93 /* Twitter.framework in Frameworks */,
@@ -156,28 +157,6 @@
 				23D375E41A2311F0004B0EED /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4283511D190A832C0065B9DA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4283511E190A833F0065B9DA /* AppIcons */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4283511E190A833F0065B9DA /* AppIcons */ = {
-			isa = PBXGroup;
-			children = (
-				4283511F190A83810065B9DA /* Geo-Location29.png */,
-				42835120190A83810065B9DA /* Geo-Location40.png */,
-				42835121190A83810065B9DA /* Geo-Location58.png */,
-				42835122190A83810065B9DA /* Geo-Location76.png */,
-				42835123190A83810065B9DA /* Geo-Location80.png */,
-				42835124190A83810065B9DA /* Geo-Location120.png */,
-				42835125190A83810065B9DA /* Geo-Location152.png */,
-			);
-			path = AppIcons;
 			sourceTree = "<group>";
 		};
 		7DAB34BF18C8854B00E37F87 /* Appdelegate */ = {
@@ -239,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				7DBE3CDB18C45985000139A6 /* GeoLocations */,
-				7DBE3CF418C45985000139A6 /* GeoLocationsTests */,
 				23D375E21A2311F0004B0EED /* GeoLocationTutorialTests */,
 				7DBE3CD418C45985000139A6 /* Frameworks */,
 				7DBE3CD318C45985000139A6 /* Products */,
@@ -258,6 +236,12 @@
 		7DBE3CD418C45985000139A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA231A9B1A9F0E0400434E36 /* CoreData.framework */,
+				FA231A991A9F0DFA00434E36 /* CoreFoundation.framework */,
+				FA231A971A9F0DE800434E36 /* MobileCoreServices.framework */,
+				FA231A951A9F0DE100434E36 /* libc++.dylib */,
+				FA231A931A9F0DDB00434E36 /* libsqlite3.dylib */,
+				FA231A911A9F0DD400434E36 /* libicucore.dylib */,
 				42835119190A6D7F0065B9DA /* BuiltIO.bundle */,
 				4283511A190A6D7F0065B9DA /* BuiltIO.framework */,
 				7D997C1618C4873300329A93 /* SystemConfiguration.framework */,
@@ -280,7 +264,6 @@
 		7DBE3CDB18C45985000139A6 /* GeoLocations */ = {
 			isa = PBXGroup;
 			children = (
-				4283511D190A832C0065B9DA /* Resources */,
 				7DAB34BF18C8854B00E37F87 /* Appdelegate */,
 				7DAB34C118C885BC00E37F87 /* View */,
 				7DAB34C018C8855D00E37F87 /* ViewController */,
@@ -298,24 +281,6 @@
 				7DBE3CE118C45985000139A6 /* main.m */,
 				7DBE3CE318C45985000139A6 /* GeoLocationTutorial-Prefix.pch */,
 				7D9E003918C759070030F510 /* Location.gpx */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7DBE3CF418C45985000139A6 /* GeoLocationsTests */ = {
-			isa = PBXGroup;
-			children = (
-				7DBE3CFA18C45985000139A6 /* GeoLocationsTests.m */,
-				7DBE3CF518C45985000139A6 /* Supporting Files */,
-			);
-			path = GeoLocationsTests;
-			sourceTree = "<group>";
-		};
-		7DBE3CF518C45985000139A6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7DBE3CF618C45985000139A6 /* GeoLocationTutorialTests-Info.plist */,
-				7DBE3CF718C45985000139A6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -407,16 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA286A5D18ED9BFB00E45578 /* GeoLocationTutorial-Info.plist in Resources */,
-				42835126190A83810065B9DA /* Geo-Location29.png in Resources */,
-				4283512C190A83810065B9DA /* Geo-Location152.png in Resources */,
-				4283512A190A83810065B9DA /* Geo-Location80.png in Resources */,
 				7DBE3CE018C45985000139A6 /* InfoPlist.strings in Resources */,
-				42835129190A83810065B9DA /* Geo-Location76.png in Resources */,
 				4283511B190A6D7F0065B9DA /* BuiltIO.bundle in Resources */,
-				4283512B190A83810065B9DA /* Geo-Location120.png in Resources */,
-				42835127190A83810065B9DA /* Geo-Location40.png in Resources */,
 				7DBE3CE818C45985000139A6 /* Images.xcassets in Resources */,
-				42835128190A83810065B9DA /* Geo-Location58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,14 +421,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				7DBE3CDF18C45985000139A6 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7DBE3CF718C45985000139A6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7DBE3CF818C45985000139A6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -605,12 +555,14 @@
 		7DBE3CFF18C45985000139A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoLocations/GeoLocationTutorial-Prefix.pch";
 				INFOPLIST_FILE = "GeoLocations/GeoLocationTutorial-Info.plist";
 				PRODUCT_NAME = GeoLocationTutorial;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -618,12 +570,14 @@
 		7DBE3D0018C45985000139A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoLocations/GeoLocationTutorial-Prefix.pch";
 				INFOPLIST_FILE = "GeoLocations/GeoLocationTutorial-Info.plist";
 				PRODUCT_NAME = GeoLocationTutorial;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -638,6 +592,7 @@
 				23D375EB1A2311F0004B0EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DBE3CCD18C45985000139A6 /* Build configuration list for PBXProject "GeoLocationTutorial" */ = {
 			isa = XCConfigurationList;

@@ -11,7 +11,8 @@
     self = [super init];
     if (self) {
         bObject = builtObject;
-        BuiltLocation *geoPoint = builtObject.getLocation;
+        
+        BuiltLocation *geoPoint = builtObject.location;
         [self setGeoPoint:geoPoint];
     }
     return self;

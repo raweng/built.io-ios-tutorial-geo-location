@@ -50,7 +50,7 @@
 
 -(void)loadData:(BuiltObject *)obj{
     self.titleLabel.text = [obj objectForKey:@"place_name"];
-    BuiltLocation *loc = obj.getLocation;
+    BuiltLocation *loc = obj.location;
     self.locationLabel.text = [NSString stringWithFormat:@"%.2f , %.2f",loc.latitude,loc.longitude];
     
     NSDate *date = [self dateWithUTCDateString:[obj objectForKey:@"created_at"] ];

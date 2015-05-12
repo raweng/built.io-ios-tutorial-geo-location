@@ -21,23 +21,21 @@
     
     // ****************************************************************************
     // Fill in with your Built credentials.
-    // Sets the api key and application uid of your application
-    // [Built initializeWithApiKey:@"API_KEY" andUid:@"APP_UID"]
+    // Sets the api key of your application
     // ****************************************************************************
 
-//    [Built initializeWithApiKey:@"APPLICATION_API_KEY" andUid:@"APP_UID"];
-    [Built initializeWithApiKey:@"blt9f2f3c1d77c907e0" andUid:@"geofencing"];
+    self.builtApplication = [Built applicationWithAPIKey:@"blt9f2f3c1d77c907e0"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    BuiltUser *user = [BuiltUser getSession];
+    BuiltUser *user = [self.builtApplication currentUser];
 
     //Configuring the delivery of location by intilising CLLocationManager and heading related events to our application
     [self initialiseLocationManager];
         
     //Check for User logged in
     if (user) {
-        [BuiltUser setCurrentUser:user];
+        [user setAsCurrentUser];
         [self loadGeoLocations];
     }else{
         [self loginWithUser];
@@ -46,17 +44,14 @@
     CLLocation *loc = self.locationManager.location;
     
     //Get current Built user
-    BuiltUser *defaultUser = [BuiltUser currentUser];
+    BuiltUser *defaultUser = [self.builtApplication currentUser];
     BuiltLocation *builtLoc = [BuiltLocation locationWithLongitude:loc.coordinate.longitude andLatitude:loc.coordinate.latitude];
     
     //Set Location of user and Update data of user
     [defaultUser setLocation:builtLoc];
-    [defaultUser updateUserWithAuthData:nil onSuccess:^{
-        NSLog(@"user update success");
-    } onError:^(NSError *error) {
-        NSLog(@"user update error");
+    [defaultUser updateUserInBackgroundWithAuthData:nil completion:^(ResponseType responseType, NSError *error) {
+        
     }];
-
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -67,8 +62,8 @@
     // `BuiltUITableViewController` Sub-class of UITableViewController with support of BuiltIO SDK
     // Initializes a table-view controller to manage a table view of a given style and binds with Built Class of a given classUID.
     // ****************************************************************************
-    
-    GeoListViewController *geoViewController = [[GeoListViewController alloc]initWithStyle:UITableViewStylePlain withClassUID:@"places"];//@"places"
+    BuiltClass *builtClass = [self.builtApplication classWithUID:@"places"];
+    GeoListViewController *geoViewController = [[GeoListViewController alloc]initWithStyle:UITableViewStylePlain withBuiltClass:builtClass];//@"places"
     self.navigationController = [[UINavigationController alloc]initWithRootViewController:geoViewController];
     self.window.rootViewController = self.navigationController;
 }
@@ -80,6 +75,7 @@
     
     BuiltUILoginController *loginView = [[BuiltUILoginController alloc]initWithNibName:nil bundle:nil];
     loginView.delegate = self;
+    loginView.builtApplication = self.builtApplication;
     
     // Set delegates  for twitter and google sign in
     [loginView setTwitterAppSettingDelegate:self];
@@ -122,8 +118,7 @@
 //Invoked when Login is successful.
 - (void)loginSuccessWithUser:(BuiltUser *)user{
     //Save user on disk and get user info
-    [user saveSession];
-    [BuiltUser setCurrentUser:user];
+    [user setAsCurrentUser];
     [self loadGeoLocations];
 }
 
@@ -138,14 +133,12 @@
 //For Google App Client ID to authenticate from Google
 -(NSString *)googleAppClientID{
     //Put client_id here
-//    return @"client_id here";
     return @"568588508670.apps.googleusercontent.com";
 }
 
 //For Google App Client Secret to authenticate from Google
 -(NSString *)googleAppClientSecret{
     //Put secret here
-//    return @"Google App Client Secret here";
     return @"YNASO2MDS17U58rT7Hm12l7Z";
 }
 
@@ -155,13 +148,11 @@
 -(NSString *)consumerKey{
     //Put twitter consumer_key here
     return @"twitter consumer key";
-//    return @"6HcjyZmhuzROqGxSzjH4Q";
 }
 
 -(NSString *)consumerSecret{
     //Put twitter consumer_secret here
     return @"consumer_secret here";
-//     return @"pn2M82Cp4SB091SpanVJf8yTZDUgGtcSJhz4jCD450";
 }
 
 -(void)cancelTapped{
